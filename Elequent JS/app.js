@@ -15,7 +15,7 @@
 let number = 0;
 
 while (number <= 12) {
-    console.log(number);
+    // console.log(number);
     number = number + 3;
 }
 
@@ -28,7 +28,7 @@ while (counter < 10) {
     // console.log(result,counter);
 }
 
-console.log(result);
+// console.log(result);
 
 // do loops 
 
@@ -49,7 +49,7 @@ This Program will force you to enter a name. It will ask again and again until i
 // for loops
 
 for (let i = 0; i <= 12; i = i + 2) {
-    console.log(i);
+    // console.log(i);
 }
 
 let res = 1;
@@ -58,4 +58,37 @@ for (let count = 0; count < 10; count++) {
     res = res * 2;
 }
 
-console.log(res);
+// console.log(res);
+
+
+// for of loops
+
+const arr = ['robiul', 'hasan', 'me'];
+
+arr.forEach((e) => {
+    // console.log(e[0]);
+});
+
+const btnCont = document.querySelector('.btn-container');
+const btn = document.querySelectorAll('.btn');
+const demo = document.getElementById('demo');
+
+console.log(btn);
+
+btn.forEach((e) => {
+    e.addEventListener('click', () => {
+        
+        if(e.classList.contains('one')) {
+            console.log('one');
+            demo.innerHTML = 'hello';
+        }
+        if(e.classList.contains('two')) {
+            console.log('two');
+            demo.innerHTML = 'hi';
+        }
+        if(e.classList.contains('three')) {
+            console.log('three');
+            demo.innerHTML = 'fine';
+        }
+    })
+})
