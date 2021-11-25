@@ -1,5 +1,42 @@
 'use strict';
 
+
+// STRINGS
+
+// <----- STRING METHOD ----->
+
+//length
+
+let txt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let length = txt.length;
+
+// extract 
+
+let slice = txt.slice(0,5); // slice(start,end)
+let sub = txt.substring(5,10); // substring(start,end)
+let substr = txt.substr(10,15); // substr(start,length)
+
+let str = "Apple, Banana, Kiwi";
+let part = str.slice(str.length - 4);
+
+// replace
+
+let text = 'Please visit Microsoft and Microsoft';
+let newText = text.replace("Microsoft", "Apple");
+let newTextRegex = text.replace(/MICROSOFT/i,"apple");
+let newTextG = text.replace(/Microsoft/g, "Apple");
+
+// upper & lower case
+
+let upperText = text.toUpperCase();
+let lowerText = text.toLowerCase();
+
+// concat
+
+let newTxt = text.concat(" ", txt);
+
+console.log(newTxt);
+
 // CONDITIONAL EXECUTION
 
 // let theNumber = Number(prompt("Pick a Number"));
@@ -73,22 +110,85 @@ const btnCont = document.querySelector('.btn-container');
 const btn = document.querySelectorAll('.btn');
 const demo = document.getElementById('demo');
 
-console.log(btn);
+// console.log(btn);
+
+
+
+const date = new Date;
+
+const GetTime = {
+    hr: date.getHours(),
+    min: date.getMinutes(),
+    sec: date.getSeconds(),
+
+    format() {
+        this.hr = this.hr > 12 ? this.hr - 12 : this.hr;
+        this.min = this.min < 10 ? `0${this.min}` : this.min;
+        this.sec = this.sec < 10 ? `0${this.sec}` : this.sec;
+    },
+
+    time() {
+        this.format();
+        return (
+            `
+            ${this.hr}:${this.min}:${this.sec}
+            `
+        ).trim();
+    }
+}
 
 btn.forEach((e) => {
     e.addEventListener('click', () => {
-        
-        if(e.classList.contains('one')) {
-            console.log('one');
-            demo.innerHTML = 'hello';
-        }
-        if(e.classList.contains('two')) {
-            console.log('two');
-            demo.innerHTML = 'hi';
-        }
-        if(e.classList.contains('three')) {
-            console.log('three');
-            demo.innerHTML = 'fine';
-        }
+        demo.innerHTML = 'hello'
     })
 })
+
+for (const e of btn) {
+    e.addEventListener('click',() => {
+        console.log(demo.innerHTML = 'hi');
+    })
+}
+let count = 0;
+
+for (let i = 1; i <= 10; i++) {
+    count = i;
+    // console.log(count);
+}
+
+// for (let i of count) {
+//     i++;
+    
+// console.log(i);
+// }
+
+
+const displayClock = () => {
+    let time = new Date;
+    let hrs = time.getHours();
+    let mins = time.getMinutes();
+    let secs = time.getSeconds();
+    let am = 'AM';
+
+    if (hrs > 12) {
+        hrs +- 12;
+        am = 'PM';
+    }
+
+    if (hrs == 0 ) {
+        hrs = 12;
+    }
+    if (hrs < 10) {
+        hrs = `0${hrs}`;
+    }
+
+    if (mins < 10) {
+        mins = `0${mins}`;
+    }
+    if (secs < 10) {
+        secs = `0${secs}`;
+    }
+
+    document.getElementById('clock').innerHTML = `${hrs} : ${mins} : ${secs} ${am}`;
+}
+
+setInterval(displayClock, 500);
