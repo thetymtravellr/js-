@@ -21,7 +21,7 @@ let part = str.slice(str.length - 4);
 
 // replace
 
-let text = 'Please visit Microsoft and Microsoft';
+let text = '     Please visit Microsoft and Microsoft      ';
 let newText = text.replace("Microsoft", "Apple");
 let newTextRegex = text.replace(/MICROSOFT/i,"apple");
 let newTextG = text.replace(/Microsoft/g, "Apple");
@@ -35,7 +35,18 @@ let lowerText = text.toLowerCase();
 
 let newTxt = text.concat(" ", txt);
 
-console.log(newTxt);
+// trim
+
+let newTrimText = text.trim();
+
+
+// padding
+
+let num = '5'
+
+let padtxt = num.padStart(4,'a');
+let txtPad = num.padEnd(4,'a')
+console.log(padtxt,num,txtPad);
 
 // CONDITIONAL EXECUTION
 
