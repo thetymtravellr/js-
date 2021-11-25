@@ -21,7 +21,7 @@ let part = str.slice(str.length - 4);
 
 // replace
 
-let text = '     Please visit Microsoft and Microsoft      ';
+let text = 'Please visit Microsoft and Microsoft      ';
 let newText = text.replace("Microsoft", "Apple");
 let newTextRegex = text.replace(/MICROSOFT/i,"apple");
 let newTextG = text.replace(/Microsoft/g, "Apple");
@@ -46,7 +46,28 @@ let num = '5'
 
 let padtxt = num.padStart(4,'a');
 let txtPad = num.padEnd(4,'a')
-console.log(padtxt,num,txtPad);
+
+// char at 
+
+let char = text.charAt(5);
+
+// convert string to array
+
+
+
+console.log(text.split(' '));
+
+
+// <----- STRING SEARCH ----->
+
+// indexof
+
+let testData = text.indexOf('i');
+testData = text.lastIndexOf("Microsoft")
+
+console.log(testData);
+
+
 
 // CONDITIONAL EXECUTION
 
