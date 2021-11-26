@@ -67,6 +67,19 @@ testData = text.lastIndexOf("Microsoft")
 
 console.log(testData);
 
+// NUMBER
+
+// <----- NUMBER METHOD ----->
+
+let x = 100;
+let y = 9.656;
+
+console.log(x.toString(), x);
+console.log(x.toExponential());
+console.log(y.toFixed(1));
+console.log(y.toPrecision(5));
+console.log(x.valueOf());
+
 
 
 // CONDITIONAL EXECUTION
