@@ -55,7 +55,7 @@ let char = text.charAt(5);
 
 
 
-console.log(text.split(' '));
+// console.log(text.split(' '));
 
 
 // <----- STRING SEARCH ----->
@@ -65,7 +65,7 @@ console.log(text.split(' '));
 let testData = text.indexOf('i');
 testData = text.lastIndexOf("Microsoft")
 
-console.log(testData);
+
 
 // NUMBER
 
@@ -74,13 +74,47 @@ console.log(testData);
 let x = 100;
 let y = 9.656;
 
-console.log(x.toString(), x);
-console.log(x.toExponential());
-console.log(y.toFixed(1));
-console.log(y.toPrecision(5));
-console.log(x.valueOf());
+// console.log(x.toString(), x);
+// console.log(x.toExponential());
+// console.log(y.toFixed(1));
+// console.log(y.toPrecision(5));
+// console.log(x.valueOf());
+
+// convert var to num
+
+// console.log(Number(true));
+// console.log(Number(new Date));
+// console.log(parseInt(.5));
+// console.log(parseFloat(5.5));
 
 
+// ARRAYS
+
+const friends = ['Robiul','Hasan','Nahid'];
+
+friends[2] = 'Opu';
+
+
+// array method
+
+// console.log(friends.sort());
+// console.log(friends.length);
+
+//looping array element 
+
+for (let i = 0; i < friends.length; i++) {
+    // console.log(friends[i]);
+}
+
+// adding & remove array element
+
+friends.push('abdullah'); // add new ele to the end 
+friends.unshift('hridoy'); // add new ele to the start
+
+friends.pop(); // remove last ele from the array
+friends.shift(); // remove first ele from the array
+
+console.log(friends);
 
 // CONDITIONAL EXECUTION
 
