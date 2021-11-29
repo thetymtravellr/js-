@@ -95,7 +95,7 @@ const friends = ['Robiul','Hasan','Nahid'];
 friends[2] = 'Opu';
 
 
-// array method
+
 
 // console.log(friends.sort());
 // console.log(friends.length);
@@ -106,6 +106,8 @@ for (let i = 0; i < friends.length; i++) {
     // console.log(friends[i]);
 }
 
+// array method
+
 // adding & remove array element
 
 friends.push('abdullah'); // add new ele to the end 
@@ -114,8 +116,26 @@ friends.unshift('hridoy'); // add new ele to the start
 friends.pop(); // remove last ele from the array
 friends.shift(); // remove first ele from the array
 
-console.log(friends);
 
+console.log(Array.isArray(friends), friends instanceof Array);
+
+// converting array to strings
+
+console.log(friends.toString(), friends);
+console.log(friends.join(' - '));
+
+// splice
+
+friends.splice(2,0, 'rabbi','jahid');
+friends.splice(3,1);
+
+// concat arrays
+
+let myFirstName = ['robiul'];
+let myLastName = ['hasan'];
+let fullName = myFirstName.concat(myLastName);
+
+console.log(friends.slice(1,3),friends);
 // CONDITIONAL EXECUTION
 
 // let theNumber = Number(prompt("Pick a Number"));

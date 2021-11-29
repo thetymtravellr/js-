@@ -11,7 +11,6 @@ searchbox.addEventListener('keypress', setQuery);
 function setQuery(evt) {
     if(evt.keyCode == 13) {
         getResults(searchbox.value);
-        console.log(searchbox.value);
     }
 }
 
@@ -19,6 +18,7 @@ function getResults(query) {
     fetch(`${api.base}weather?q=${query}&units=metric&appid=${api.key}`).then(weather => {
         return weather.json();
     }).then(displayResults);
+    
 }
 
 function displayResults(weather) {
@@ -43,7 +43,7 @@ function displayResults(weather) {
 function dateBuilder(d) {
     let months = ['January', 'February', 'March', 'April','May', 'June', 'July','August','September','October','November','December'];
 
-    let days = ['Saturday','Sunday','Monday','Tuesday','Wednesday','Thursday','Friday'];
+    let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
     let day = days[d.getDay()];
     let date = d.getDate();
@@ -53,3 +53,4 @@ function dateBuilder(d) {
     return `${day} ${date} ${month} ${year}`
 
 }
+
