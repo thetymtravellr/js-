@@ -291,3 +291,10 @@ const displayClock = () => {
 }
 
 setInterval(displayClock, 500);
+
+
+function calcAge(birthYear) {
+    return 2021 - birthYear;
+}
+
+console.log(calcAge(1998));
