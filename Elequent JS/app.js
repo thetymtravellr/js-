@@ -297,4 +297,55 @@ function calcAge(birthYear) {
     return 2021 - birthYear;
 }
 
-console.log(calcAge(1998));
+const calcAge1 = function (birthYear) {
+    return 2041 - birthYear;
+}
+
+const calcAge2 = birthYear => 2061 - birthYear;
+/*
+console.log(`<----- Type Of Function ----->
+
+Function Declaration --> ${calcAge(1998)}
+Function Expression  --> ${calcAge1(1998)}
+Arrow Function       --> ${calcAge2(1998)}`);
+
+*/
+// <----- ARRAY ----->
+
+const list = ['Tomato','Potato','Carrot','Banana','Apple'];
+
+// <----- DESTRUCTING AN ARRAY ----->
+
+const fruits = list; 
+
+console.log(fruits);
+// <----- OBJECT ----->
+
+const Person = {
+    firstName: 'Robiul',
+    lastName: 'Hasan',
+    birthYear: 1998,
+    relStatus: 'Single',
+    // this is an obj inside obj
+    friends: {
+        one: 'Abu Bakr',
+        two: 'Abdus Salam',
+        three: 'Abdur Rob'
+    },
+    // this is an obj method
+    age: function() {
+        return 2021 - this.birthYear;
+    }
+}
+
+// console.log(`My Name Is ${Person.firstName} ${Person.lastName} & I'm ${2021 - Person.birthYear} Years Old. I'm ${Person.relStatus}`);
+
+// <----- DESTRUCTING AN OBJECT ----->
+
+// this will asign the obj property to a new variable with the same name.
+const { firstName, lastName } = Person;
+
+// this will asign the obj property to a new variable named myName.
+const { firstName:myName1, lastName:myName2 } = Person; 
+
+// console.log(Person.friends.one,Person.age());
