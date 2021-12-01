@@ -349,3 +349,20 @@ const { firstName, lastName } = Person;
 const { firstName:myName1, lastName:myName2 } = Person; 
 
 // console.log(Person.friends.one,Person.age());
+
+
+
+//LEARN WITH SUMIT
+
+let a = "5";
+let b = '4';
+
+let g = 2;
+let h = 4;
+
+// g += h; // g = g + h
+// g -= h; // g = g - h
+// g *= h; // g = g * h
+// g /= h; // g = g / h
+// g %= h; //g = g % h
+g <<= h; // g = g << y
