@@ -366,3 +366,20 @@ let h = 4;
 // g /= h; // g = g / h
 // g %= h; //g = g % h
 g <<= h; // g = g << y
+
+
+const myObj = {
+    x: 5,
+    y: 6,
+    z: 7
+}
+
+function sleep(names, time) {
+    console.log(names + " Is Sleeping From " + time);
+}
+
+console.log("My name is Jasim");
+
+sleep("Hasan", "10 PM");
+sleep("Robiul", "11 PM");
+sleep("Taher", "12 PM");
