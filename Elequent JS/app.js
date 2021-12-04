@@ -378,8 +378,29 @@ function sleep(names, time) {
     console.log(names + " Is Sleeping From " + time);
 }
 
-console.log("My name is Jasim");
+function myFunc() {
+    let carName = "Volvo";
+    console.log(carName);
+}
 
-sleep("Hasan", "10 PM");
-sleep("Robiul", "11 PM");
-sleep("Taher", "12 PM");
+myFunc();
+
+// console.log(carName);
+
+
+const car = {
+    name: "BMW",
+    model: 500,
+    weight: "850kg",
+    color: "white",
+    start: function(){
+        console.log("car has started");
+    },
+    drive: function(){
+        console.log("car is driving");
+    },
+}
+
+console.log(car.weight);
+console.log(car["weight"]);
+car.start();
