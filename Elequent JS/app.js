@@ -318,7 +318,7 @@ const list = ['Tomato','Potato','Carrot','Banana','Apple'];
 
 const fruits = list; 
 
-console.log(fruits);
+// console.log(fruits);
 // <----- OBJECT ----->
 
 const Person = {
@@ -383,7 +383,7 @@ function myFunc() {
     console.log(carName);
 }
 
-myFunc();
+// myFunc();
 
 // console.log(carName);
 
@@ -401,6 +401,19 @@ const car = {
     },
 }
 
-console.log(car.weight);
-console.log(car["weight"]);
-car.start();
+// console.log(car.weight);
+// console.log(car["weight"]);
+// car.start();
+// car["start"]();
+
+let f = "Abdur Rahim";
+let d = new String("Abdur Rahim");
+// console.log(typeof d);
+
+
+// JS Strings
+
+let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+let vik = 'We are the so-called \'Viking\' from the north.';
+console.log(alphabet.length,vik);s
