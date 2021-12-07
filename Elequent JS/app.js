@@ -416,4 +416,18 @@ let d = new String("Abdur Rahim");
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 let vik = 'We are the so-called \'Viking\' from the north.';
-console.log(alphabet.length,vik);s
+
+const tut = 'Robiul Hasan';
+
+const country = {
+    name: "Bangladesh",
+    districts: 64,
+};
+
+//length
+
+console.log(tut.length);
+
+//slice 
+
+console.log(country.name.slice(0,4));
