@@ -431,3 +431,11 @@ console.log(tut.length);
 //slice 
 
 console.log(country.name.slice(0,4));
+
+
+// template literals
+
+let n = `It's My Life.
+hello`;
+
+console.log(n);
