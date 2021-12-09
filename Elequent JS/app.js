@@ -439,3 +439,10 @@ let n = `It's My Life.
 hello`;
 
 console.log(n);
+
+// JS numbers
+
+let int = 9999999999999999;
+let int2 = 99999999999999999;
+
+console.log(int + int2);
