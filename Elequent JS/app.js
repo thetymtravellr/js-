@@ -355,7 +355,7 @@ const { firstName:myName1, lastName:myName2 } = Person;
 //LEARN WITH SUMIT
 
 let a = "5";
-let b = '4';
+// let b = '4';
 
 let g = 2;
 let h = 4;
@@ -435,14 +435,20 @@ console.log(country.name.slice(0,4));
 
 // template literals
 
-let n = `It's My Life.
-hello`;
+// let n = `It's My Life.
+// hello`;
 
-console.log(n);
+// console.log(n);
 
 // JS numbers
 
 let int = 9999999999999999;
 let int2 = 99999999999999999;
 
-console.log(int + int2);
+let n = 10;
+let m = 20;
+let b = 'Hello ' + n + m;
+
+
+console.log(b);
+
