@@ -446,9 +446,12 @@ let int = 9999999999999999;
 let int2 = 99999999999999999;
 
 let n = 10;
-let m = 20;
+let m = 20.656;
 let b = 'Hello ' + n + m;
 
+let l = n.toString();
+let o = m.toExponential(4);
+let k = m.toFixed(1);
 
-console.log(b);
+console.log(k);
 
