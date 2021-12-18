@@ -238,13 +238,13 @@ const GetTime = {
 
 btn.forEach((e) => {
     e.addEventListener('click', () => {
-        demo.innerHTML = 'hello'
+        // demo.innerHTML = 'hello'
     })
 })
 
 for (const e of btn) {
     e.addEventListener('click',() => {
-        console.log(demo.innerHTML = 'hi');
+        // console.log(demo.innerHTML = 'hi');
     })
 }
 let count = 0;
@@ -455,3 +455,17 @@ let k = m.toFixed(1);
 
 console.log(k);
 
+// ARRAY
+
+const cars = ['Ferrari','Lamborghini','BMW','Tesla','Volvo'];
+// demo.innerHTML = cars;
+let clen = cars.length;
+
+// for(let i = 0; i < clen; i++) {
+//     console.log(`${i + 1}: ${cars[i]}`);
+// }
+
+function myFunc() {
+    console.log(cars);
+}
+cars.forEach(myFunc)
