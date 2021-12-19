@@ -459,13 +459,18 @@ console.log(k);
 
 const cars = ['Ferrari','Lamborghini','BMW','Tesla','Volvo'];
 // demo.innerHTML = cars;
-let clen = cars.length;
+// let clen = cars.length;
 
 // for(let i = 0; i < clen; i++) {
 //     console.log(`${i + 1}: ${cars[i]}`);
 // }
 
-function myFunc() {
-    console.log(cars);
-}
-cars.forEach(myFunc)
+// function myFunc() {
+//     console.log(cars);
+// }
+// cars.forEach(myFunc)
+// console.log(cars.toString());
+// console.log(cars.join(' - ')); // i can specify the separator.;
+
+cars.splice(2,0, 'Tata','Yamaha');
+console.log(cars);
