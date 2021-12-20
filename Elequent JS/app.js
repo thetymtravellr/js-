@@ -473,4 +473,6 @@ const cars = ['Ferrari','Lamborghini','BMW','Tesla','Volvo'];
 // console.log(cars.join(' - ')); // i can specify the separator.;
 
 cars.splice(2,0, 'Tata','Yamaha');
-console.log(cars);
+const citrus = cars.slice(1,3);
+const NewCars = cars.concat('hiundy');
+console.log(cars,NewCars,citrus);

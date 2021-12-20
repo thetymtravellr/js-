@@ -15,19 +15,47 @@
         );
         color: #fff;
         text-align: center;
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
       }
-
+      /*
       #clock {
         font-size: 5rem;
         color: blue;
+      } */
+      /* W3 SCHOOL HTML */
+      table {
+        width: 100%;
+        /* border-spacing: 10px; */
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        /* border: 1px solid black; */
+
+        border-radius: 10px;
+        /* border-style: dashed; */
+        border-color: red;
+      }
+      /* th,
+      td {
+        padding: 15px;
+      } */
+      /* td:nth-child(even) {
+        background-color: red;
+      } */
+      tr {
+        border-bottom: 1px solid black;
+      }
+      tr:hover {
+        background-color: rgba(248, 136, 136, 0.144);
       }
     </style>
   </head>
   <body>
     <h1>Elequent JS</h1>
 
-    <div class="btn-container">
+    <!-- <div class="btn-container">
       <button class="btn one">hello</button>
       <button class="btn two">hi</button>
       <button class="btn three">fine</button>
@@ -38,8 +66,81 @@
     <p id="clock">
       <span>10</span> : <span class="min">10</span> :
       <span class="sec">10</span>
-    </p>
+    </p> -->
 
+    <!-- W3 SCHOOL HTML -->
+
+    <table>
+      <!--  -->
+      <caption>
+        Regular Table
+      </caption>
+      <colgroup>
+        <col span="2" style="background-color: rgba(255, 255, 255, 0.144)" />
+      </colgroup>
+      <colgroup>
+        <col span="1" style="background-color: aqua; visibility: collapse" />
+      </colgroup>
+      <tr>
+        <!-- table row -->
+        <th colspan="2">Company</th>
+        <!-- table header -->
+
+        <th>Country</th>
+      </tr>
+      <tr style="height: 200px">
+        <td>The Travellers</td>
+        <!-- table data -->
+        <td>Robiul Hasan</td>
+        <td>Bangladesh</td>
+      </tr>
+      <tr>
+        <td>Captain Nemo</td>
+        <td>Robiul Hasan</td>
+        <td>Bangladesh</td>
+      </tr>
+    </table>
+    <!-- table with vertical header -->
+    <table>
+      <caption>
+        Table with vertical header
+      </caption>
+      <tr>
+        <!-- table row -->
+        <th>Company</th>
+        <td>The Travellers</td>
+        <td>Captain Nemo</td>
+        <!-- table header -->
+      </tr>
+      <tr style="height: 200px">
+        <th rowspan="2">Contact</th>
+        <!-- table data -->
+        <td>Robiul Hasan</td>
+        <td>Robiul Hasan</td>
+      </tr>
+      <tr>
+        <td>Bangladesh</td>
+        <td>Bangladesh</td>
+      </tr>
+    </table>
+
+    <!-- iframe -->
+    <iframe
+      width="420"
+      height="300"
+      src="https://www.youtube.com/embed/VecbXgWY0DI?controls=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <!-- video -->
+
+    <video width="300" height="200" controls>
+      <source src="" type="video/mp4" />
+    </video>
+    <!-- W3 SCHOOL HTML -->
     <script src="app.js"></script>
   </body>
 </html>
